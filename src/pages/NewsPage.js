@@ -1,14 +1,14 @@
 import React from 'react';
 import Categories from '../components/Categories';
-import NewList from '../components/NewList';
+import NewsList from '../components/NewsList';
 
 const NewsPage = ({ match }) => {
   const category = match.params.category || 'all';
   return (
-    <div>
+    <>
       <Categories />
-      <NewList category={category} />
-    </div>
+      <NewsList category={category} />
+    </>
   );
 };
 
